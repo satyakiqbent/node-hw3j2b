@@ -3,7 +3,7 @@
 const array1 = [1, 2, 3, 4];
 
 // Fill with 0 from position 2 until position 4
-console.log(array1.fill(0, 2, 4));
+console.log(array1.fill(0, 2, 4)); // fill(value, start, end)
 // Expected output: Array [1, 2, 0, 0]
 
 // Fill with 5 from position 1
@@ -131,9 +131,9 @@ console.log(modifiedWords);
 // Notice there are three words below length 6, but since they've been modified one is returned
 // ["spray"]
 // Appending new words
-words = ["spray", "limit", "exuberant", "destruction", "elite", "present"];
+words = ['spray', 'limit', 'exuberant', 'destruction', 'elite', 'present'];
 const appendedWords = words.filter((word, index, arr) => {
-  arr.push("new");
+  arr.push('new');
   return word.length < 6;
 });
 
@@ -142,7 +142,7 @@ console.log(appendedWords);
 // ["spray" ,"limit" ,"elite"]
 
 // Deleting words
-words = ["spray", "limit", "exuberant", "destruction", "elite", "present"];
+words = ['spray', 'limit', 'exuberant', 'destruction', 'elite', 'present'];
 const deleteWords = words.filter((word, index, arr) => {
   arr.pop();
   return word.length < 6;

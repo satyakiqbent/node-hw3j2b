@@ -1,5 +1,5 @@
 ////////////////////////////////////////////entries()
-/*
+//*
 const array1 = ['a', 'b', 'c'];
 
 const iterator1 = array1.entries();
@@ -11,7 +11,7 @@ console.log(iterator1.next().value);
 // Expected output: Array [1, "b"]
 //*/
 ////////////////////////////////////////////
-/*
+//*
 const a = ['a', 'b', 'c'];
 
 for (const [index, element] of a.entries()) {
@@ -38,7 +38,7 @@ for (const element of [, 'a'].entries()) {
 // [1, 'a']
 //*/
 ////////////////////////////////////////////
-/*
+//*
 const arrayLike = {
   length: 3,
   0: 'a',
@@ -62,7 +62,7 @@ console.log(array1.every(isBelowThreshold));
 // Expected output: true
 //*/
 /*Check if one array is a subset of another array*/
-/*
+//*
 const isSubset = (array1, array2) =>
   array2.every((element) => array1.includes(element));
 
